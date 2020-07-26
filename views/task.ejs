@@ -1,0 +1,15 @@
+<%- include('./partials/header') %>
+<body>
+    <%- include ('./partials/navbar') %>   
+    <div class="container">
+        <hr>
+        <h1><%= tarefa.nome %></h1>
+        <p><%= tarefa.descricao %></p>
+        <p><%= tarefa.prioridade %></p>
+        <hr>
+            <input type="hidden" name="tarefa" value="<%= tarefa.id%>">
+           <a href="/"><button class="btn btn-outline-info">Voltar</button></a>
+        <hr>
+    </div>
+</body>
+<%- include ('./partials/footer') %>
